@@ -133,3 +133,5 @@ my-nextjs-app/
 └── README.md
 
 ```
+### lib vs services vs api vs models
+![logo](https://github.com/Avinash-kumar-82/NextJS/main/images/folder_structure.png)
