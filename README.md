@@ -34,3 +34,102 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+## Folder Structure
+
+```
+
+my-nextjs-app/
+├── src/
+│   ├── app/
+│   │   ├── (auth)/
+│   │   │   ├── login/
+│   │   │   │   └── page.tsx
+│   │   │   ├── register/
+│   │   │   │   └── page.tsx
+│   │   │   └── layout.tsx
+│   │   │
+│   │   ├── (dashboard)/
+│   │   │   ├── layout.tsx
+│   │   │   ├── page.tsx
+│   │   │   ├── devices/
+│   │   │   │   └── page.tsx
+│   │   │   ├── analytics/
+│   │   │   │   └── page.tsx
+│   │   │   └── settings/
+│   │   │       └── page.tsx
+│   │   │
+│   │   ├── api/
+│   │   │   ├── auth/
+│   │   │   │   └── route.ts
+│   │   │   ├── users/
+│   │   │   │   └── route.ts
+│   │   │   ├── devices/
+│   │   │   │   └── route.ts
+│   │   │   ├── mqtt/
+│   │   │   │   └── route.ts
+│   │   │   └── blockchain/
+│   │   │       └── route.ts
+│   │   │
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   ├── error.tsx
+│   │   ├── loading.tsx
+│   │   └── not-found.tsx
+│   │
+│   ├── components/
+│   │   ├── ui/
+│   │   ├── layout/
+│   │   └── shared/
+│   │
+│   ├── lib/
+│   │   ├── db.ts
+│   │   ├── auth.ts
+│   │   ├── mqtt.ts
+│   │   ├── blockchain.ts
+│   │   ├── redis.ts
+│   │   └── logger.ts
+│   │
+│   ├── services/
+│   │   ├── user.service.ts
+│   │   ├── device.service.ts
+│   │   ├── analytics.service.ts
+│   │   └── auth.service.ts
+│   │
+│   ├── models/
+│   │   ├── user.model.ts
+│   │   ├── device.model.ts
+│   │   └── telemetry.model.ts
+│   │
+│   ├── hooks/
+│   │   ├── useAuth.ts
+│   │   ├── useDevices.ts
+│   │   └── useSocket.ts
+│   │
+│   ├── store/
+│   │   ├── auth.store.ts
+│   │   └── device.store.ts
+│   │
+│   ├── utils/
+│   │   ├── constants.ts
+│   │   ├── validators.ts
+│   │   └── helpers.ts
+│   │
+│   ├── types/
+│   │   ├── user.ts
+│   │   ├── device.ts
+│   │   └── api.ts
+│
+├── public/
+│   ├── images/
+│   └── icons/
+│
+├── middleware.ts
+├── env.mjs
+├── next.config.js
+├── package.json
+├── tsconfig.json
+└── README.md
+
+```
