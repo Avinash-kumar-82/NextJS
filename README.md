@@ -134,4 +134,5 @@ my-nextjs-app/
 
 ```
 ### lib vs services vs api vs models
-![logo](https://github.com/Avinash-kumar-82/NextJS/main/images/Folder_structure.png)
+![logo](https://raw.githubusercontent.com/Avinash-kumar-82/NextJS/main/images/Folder_structure.png)
+
